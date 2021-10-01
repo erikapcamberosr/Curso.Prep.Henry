@@ -53,15 +53,15 @@ describe('saludo(idioma)', function() {
   it('should return \'Guten Tag!\' for aleman', function() {
     expect(saludo('aleman')).toBe('Guten Tag!');
   });
-  it('should return \'Hola!\' for ingles', function() {
+  it('should return \'Hello!\' for ingles', function() {
     expect(saludo('ingles')).toBe('Hello!');
   });
   it('should return \'Ni Hao!\' for mandarin', function() {
     expect(saludo('mandarin')).toBe('Ni Hao!');
   });
-  it('should return \'Hola!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
-    expect(saludo('frances')).toBe('Hola!');
-    expect(saludo()).toBe('Hola!');
+  it('should return \'Salut!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
+    expect(saludo('frances')).toBe('Salut!');
+    expect(saludo()).toBe('Salut!');
   });
 });
 
