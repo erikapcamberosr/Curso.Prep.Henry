@@ -59,9 +59,9 @@ describe('saludo(idioma)', function() {
   it('should return \'Ni Hao!\' for mandarin', function() {
     expect(saludo('mandarin')).toBe('Ni Hao!');
   });
-  it('should return \'Salut!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
-    expect(saludo('frances')).toBe('Salut!');
-    expect(saludo()).toBe('Salut!');
+  it('should return \'Hola!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
+    expect(saludo('undefined')).toBe('Hola!');
+    expect(saludo()).toBe('Hola!');
   });
 });
 
